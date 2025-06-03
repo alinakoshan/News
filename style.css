@@ -1,0 +1,43 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg: #f8f9fa;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --card-bg: #1e1e1e;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, small, a, span {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    transition: background-color 0.3s ease;
+  }
+  
+  #most-popular {
+    color: var(--text-color);
+  }
+  
+  .theme-icon::before {
+    content: "🌞";
+    font-size: 1.3rem;
+    margin-left: 10px;
+    transition: content 0.3s ease;
+  }
+  
+  [data-theme="dark"] .theme-icon::before {
+    content: "🌙";
+  }
+  

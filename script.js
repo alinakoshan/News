@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', newTheme);
   });
 
-  fetch('Articles.json')
+  fetch('articles.json')
     .then(res => res.json())
     .then(data => {
       articles = data.articles;
